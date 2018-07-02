@@ -84,10 +84,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <dl class="section version"><dt>Version</dt><dd>1.0</dd></dl>
 <h1><a class="anchor" id="description"></a>
 Description</h1>
-<p>This is a part of the Projet d'Investissement d'Avenir (PIA) ID-Blockchain. The main objectif of ID-Blockchain_crypto is to contribute to the Proof Of Concept of the project ID-Blockchain, proposing user friendly crypto functions needed into the project ID-Blockchain. This mini crypto library was developped in C, and is based on the openSSL library. More precisely, id-blockchain_crypto can be view as a wrapper on the need features into the openSSL library.</p>
+<p>This is a part of the Projet d'Investissement d'Avenir (PIA) ID-Blockchain. The main objective of ID-Blockchain_crypto is to contribute to the Proof Of Concept of the project ID-Blockchain, proposing user friendly crypto functions needed into the project ID-Blockchain. This mini crypto library was developed in C, and is based on the openSSL library. More precisely, id-blockchain_crypto can be view as a wrapper on the need features into the openSSL library.</p>
 <h1><a class="anchor" id="compilation"></a>
 Compilation</h1>
-<p>For the compilation we assume that openSSL is intalled on the host computer. The compilation is helped with a makefile, thus to compile simply type:</p>
+<p>For the compilation we assume that openSSL is installed on the host computer. The compilation is helped with a makefile, thus to compile simply type:</p>
 <div class="fragment"><div class="line">$ make</div></div><!-- fragment --><h1><a class="anchor" id="feature"></a>
 Features</h1>
 <p>For the ID-Blockchain project purpose, we only need two different cryptographic tools, which are the hash functions and the signature process.</p>
@@ -100,7 +100,7 @@ Signature</h2>
 <li>secp256k1 : SECG curve over a 256 bit prime field</li>
 <li>secp521r1 : NIST/SECG curve over a 521 bit prime field</li>
 </ul>
-<p>In our proposed signatures, the messages are not directely signed but the message digests are. This step is totally managed by id-blockchain_crypto; the user does not have to do it. Thus the message length is not significant on the signature and check process. </p>
+<p>In our proposed signatures, the messages are not directly signed but the message digests are. This step is totally managed by id-blockchain_crypto; the user does not have to do it. Thus the message length is not significant on the signature and check process. </p>
 <h1><a class="anchor" id="example"></a>
 Examples</h1>
 <p>We propose to give examples to use our cryptographic library. This part of code compile with the different object files (obj/*.o) and with link to openSSL library; that is -lssl -lcrypto.</p>

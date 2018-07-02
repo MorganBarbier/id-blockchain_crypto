@@ -9,11 +9,11 @@
  *
  * \section description Description
  *
- * This is a part of the Projet d'Investissement d'Avenir (PIA) ID-Blockchain. The main objectif of ID-Blockchain_crypto is to contribute to the Proof Of Concept of the project ID-Blockchain, proposing user friendly crypto functions needed into the project ID-Blockchain. This mini crypto library was developped in C, and is based on the openSSL library. More precisely, id-blockchain_crypto can be view as a wrapper on the need features into the openSSL library.
+ * This is a part of the Projet d'Investissement d'Avenir (PIA) ID-Blockchain. The main objective of ID-Blockchain_crypto is to contribute to the Proof Of Concept of the project ID-Blockchain, proposing user friendly crypto functions needed into the project ID-Blockchain. This mini crypto library was developed in C, and is based on the openSSL library. More precisely, id-blockchain_crypto can be view as a wrapper on the need features into the openSSL library.
  *
  * \section compilation Compilation
  *
- * For the compilation we assume that openSSL is intalled on the host computer. The compilation is helped with a makefile, thus to compile simply type:
+ * For the compilation we assume that openSSL is installed on the host computer. The compilation is helped with a makefile, thus to compile simply type:
  *
  * \code
  * $ make
@@ -34,7 +34,7 @@
  * - secp256k1 : SECG curve over a 256 bit prime field
  * - secp521r1 : NIST/SECG curve over a 521 bit prime field
  *
- * In our proposed signatures, the messages are not directely signed but the message digests are. This step is totally managed by id-blockchain_crypto; the user does not have to do it. Thus the message length is not significant on the signature and check process.
+ * In our proposed signatures, the messages are not directly signed but the message digests are. This step is totally managed by id-blockchain_crypto; the user does not have to do it. Thus the message length is not significant on the signature and check process.
  * \section example Examples
  *
  * We propose to give examples to use our cryptographic library. This part of code compile with the different object files (obj/*.o) and with link to openSSL library; that is -lssl -lcrypto.
