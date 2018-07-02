@@ -13,6 +13,7 @@ SRCDIR=src
 HEADDIR=inc
 LIBDIR=obj
 BINDIR=bin
+DOCDIR=doc
 
 CC=gcc
 CFLAGS=-I$(HEADDIR) -g -Wall -pedantic -Os
@@ -26,7 +27,7 @@ OBJ=$(SRC:$(SRCDIR)/%.c=$(LIBDIR)/%.o)
 BIN=$(BINDIR)/ID-Blockchain_test
 
 
-.PHONY : clean superclean ExecuteTest
+.PHONY: clean superclean ExecuteTest doc
 
 all: $(BIN) ExecuteTest
 
@@ -40,6 +41,9 @@ $(LIBDIR)/%.o: $(SRCDIR)/%.c $(HEADDIR)/*.h
 
 ExecuteTest:
 	./$(BIN)
+
+doc:
+	$(MAKE) -C $(DOCDIR)
 
 # Nettoyage
 clean:

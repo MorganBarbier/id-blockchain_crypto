@@ -87,28 +87,24 @@ ID_BLOCKCHAIN_EC_KEY *id_blockchain_ecdsa521_keygen(void);
 void id_blockchain_eckey_free(ID_BLOCKCHAIN_EC_KEY *eckey);
 
 /**
- * \fn const ID_BLOCKCHAIN_BIGNUM *id_blockchain_ec_get_private_key
-				(const ID_BLOCKCHAIN_EC_KEY *eckey)
+ * \fn const ID_BLOCKCHAIN_BIGNUM *id_blockchain_ec_get_private_key(const ID_BLOCKCHAIN_EC_KEY *eckey)
  *
  * \brief Return the private key from the couple of keys
  *
  * \param[out] private key
  * \param[in] couple of keys
 */
-const ID_BLOCKCHAIN_BIGNUM *id_blockchain_ec_get_private_key
-                          (const ID_BLOCKCHAIN_EC_KEY *eckey);
+const ID_BLOCKCHAIN_BIGNUM *id_blockchain_ec_get_private_key(const ID_BLOCKCHAIN_EC_KEY *eckey);
 
 /**
- * \fn const ID_BLOCKCHAIN_EC_POINT *id_blockchain_ec_get_public_key
-                            (const ID_BLOCKCHAIN_EC_KEY *eckey)
+ * \fn const ID_BLOCKCHAIN_EC_POINT *id_blockchain_ec_get_public_key(const ID_BLOCKCHAIN_EC_KEY *eckey)
  *
  * \brief Return the public key from the couple of keys
  *
  * \param[out] public key
  * \param[in] couple of keys
 */
-const ID_BLOCKCHAIN_EC_POINT *id_blockchain_ec_get_public_key
-                            (const ID_BLOCKCHAIN_EC_KEY *eckey);
+const ID_BLOCKCHAIN_EC_POINT *id_blockchain_ec_get_public_key(const ID_BLOCKCHAIN_EC_KEY *eckey);
 
 /**
  * \fn int id_blockchain_ec_set_private_key(ID_BLOCKCHAIN_EC_KEY *eckey,
@@ -137,8 +133,7 @@ int id_blockchain_ec_set_public_key(ID_BLOCKCHAIN_EC_KEY *eckey,
 				    const ID_BLOCKCHAIN_EC_POINT *pub);
 
 /**
- * \fn ID_BLOCKCHAIN_ECDSA_SIG* id_blockchain_ecdsa256_do_sign
- *                         (const unsigned char *msg,
+ * \fn ID_BLOCKCHAIN_ECDSA_SIG* id_blockchain_ecdsa256_do_sign(const unsigned char *msg,
  *			  size_t len,
  *                        ID_BLOCKCHAIN_EC_KEY *eckey)
  *
@@ -149,14 +144,12 @@ int id_blockchain_ec_set_public_key(ID_BLOCKCHAIN_EC_KEY *eckey,
  * \param[in] len lenght of the message msg
  * \param[in] eckey couple of keys containing an initialized private one
 */
-ID_BLOCKCHAIN_ECDSA_SIG* id_blockchain_ecdsa256_do_sign
-                         (const unsigned char *msg,
+ID_BLOCKCHAIN_ECDSA_SIG* id_blockchain_ecdsa256_do_sign(const unsigned char *msg,
 			  size_t len,
                           ID_BLOCKCHAIN_EC_KEY *eckey);
                           
 /**
- * \fn ID_BLOCKCHAIN_ECDSA_SIG* id_blockchain_ecdsa521_do_sign
- *                         (const unsigned char *msg,
+ * \fn ID_BLOCKCHAIN_ECDSA_SIG* id_blockchain_ecdsa521_do_sign(const unsigned char *msg,
  *			  size_t len,
  *                        ID_BLOCKCHAIN_EC_KEY *eckey)
  *
@@ -167,8 +160,7 @@ ID_BLOCKCHAIN_ECDSA_SIG* id_blockchain_ecdsa256_do_sign
  * \param[in] len lenght of the message msg
  * \param[in] eckey couple of keys containing an initialized private one
 */
-ID_BLOCKCHAIN_ECDSA_SIG* id_blockchain_ecdsa521_do_sign
-                         (const unsigned char *msg,
+ID_BLOCKCHAIN_ECDSA_SIG* id_blockchain_ecdsa521_do_sign(const unsigned char *msg,
 			  size_t len,
                           ID_BLOCKCHAIN_EC_KEY *eckey);
 
@@ -176,7 +168,7 @@ ID_BLOCKCHAIN_ECDSA_SIG* id_blockchain_ecdsa521_do_sign
  * \fn int id_blockchain_ecdsa256_do_verify(const unsigned char *msg,
  *				     size_t len,
  *				     const ID_BLOCKCHAIN_ECDSA_SIG *sig,
- *				     ID_BLOCKCHAIN_EC_KEY* eckey)
+ *				     ID_BLOCKCHAIN_EC_KEY* eckey);
  *
  * \brief Verify if a 128 bits security level signature is valid
  *

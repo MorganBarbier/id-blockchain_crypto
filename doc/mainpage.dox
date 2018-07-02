@@ -4,7 +4,7 @@
  * \authors Kevin Atighehchi <kevin.atighehchi@unicaen.fr>;
  *          Morgan Barbier <morgan.barbier@ensicaen.fr>
  *
- * \date 2018-06-29
+ * \date 2018-07-02
  * \version 1.0
  *
  * \section description Description
@@ -22,15 +22,104 @@
  * \section feature Features
  *
  * For the ID-Blockchain project purpose, we only need two different cryptographic tools, which are the hash functions and the signature process.
+ *
  * \subsection hash Hash functions
  *
- * We propose two hash functions which are SHA-256 and SHA-512.
+ * We propose two hash functions which are based on Secure Hash algorithm (SHA): SHA-256 and SHA-512.
  *
  *
  * \subsection signature Signature
  *
+ * We propose also two different security levels for the signature: 128 and 256 bits. These signatures are based on Elliptic Curve Digital Signature (ECDSA), more precisely the selected curves are:
+ * - secp256k1 : SECG curve over a 256 bit prime field
+ * - secp521r1 : NIST/SECG curve over a 521 bit prime field
+ *
+ * In our proposed signatures, the messages are not directely signed but the message digests are. This step is totally managed by id-blockchain_crypto; the user does not have to do it. Thus the message length is not significant on the signature and check process.
+ * \section example Examples
+ *
+ * We propose to give examples to use our cryptographic library. This part of code compile with the different object files (obj/*.o) and with link to openSSL library; that is -lssl -lcrypto.
+ *
+ * \subsection ex_hash Hash functions
+ *
+ * We give examples for the two different security levels of hash functions. 
+ * \code
+ * #include "id_blockchain_crypto.h"
+ *
+ * int main()
+ * {
+ *   unsigned char *mystring = "Toy example for id-blockchain hash functions";
+ *   unsigned char digest[SHA256_DIGEST_LENGTH]; 
+ *
+ *   id_blockchain_sha256(mystring, strlen(mystring), digest);
+ *   print_string_hex(digest, SHA256_DIGEST_LENGTH);
+ *
+ *   return 0;
+ * }
+ * \endcode
+ *
+ * \code
+ * #include "id_blockchain_crypto.h"
+ *
+ * int main()
+ * {
+ *   unsigned char *mystring = "Toy example for id-blockchain hash functions";
+ *   unsigned char digest[SHA512_DIGEST_LENGTH]; 
+ *
+ *   id_blockchain_sha512(mystring, strlen(mystring), digest);
+ *   print_string_hex(digest, SHA512_DIGEST_LENGTH);
+ *
+ *   return 0;
+ * }
+ * \endcode
  *
  *
- * \section example Example
+ * \subsection ex_signature Signature
+ *
+ * We give examples for the two different security levels of signatures. 
+ *
+ * \code
+ * #include "id_blockchain_crypto.h"
+ *
+ * void main(void)
+ * {
+ *  unsigned char *mystring = "Toy example for id-blockchain hash functions";
+ *
+ *	ID_BLOCKCHAIN_EC_KEY *keypair      = id_blockchain_ecdsa256_keygen();
+ *	ID_BLOCKCHAIN_ECDSA_SIG *signature = id_blockchain_ecdsa256_do_sign(mystring, strlen(mystring), keypair);
+ *
+ *	if(id_blockchain_ecdsa256_do_verify(mystring, strlen(mystring), signature, keypair) == 1)
+ *	    printf("Valid signature\n");
+ *	else
+ *	    printf("Invalid signature\n");
+ *
+ *	id_blockchain_eckey_free(keypair);
+ *	id_blockchain_ecdsa_sig_free(signature);
+ *
+ *	return 0;
+ * }
+ * \endcode
+ * 
+ * \code
+ * #include "id_blockchain_crypto.h"
+ *
+ * void main(void)
+ * {
+ *  unsigned char *mystring = "Toy example for id-blockchain hash functions";
+ *
+ *	ID_BLOCKCHAIN_EC_KEY *keypair      = id_blockchain_ecdsa521_keygen();
+ *	ID_BLOCKCHAIN_ECDSA_SIG *signature = id_blockchain_ecdsa521_do_sign(mystring, strlen(mystring), keypair);
+ *
+ *	if(id_blockchain_ecdsa521_do_verify(mystring, strlen(mystring), signature, keypair) == 1)
+ *	    printf("Valid signature\n");
+ *	else
+ *	    printf("Invalid signature\n");
+ *
+ *	id_blockchain_eckey_free(keypair);
+ *	id_blockchain_ecdsa_sig_free(signature);
+ *
+ *	return 0;
+ * }
+ * \endcode
+ *
  *
 */ 

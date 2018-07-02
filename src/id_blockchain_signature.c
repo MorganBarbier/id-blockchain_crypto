@@ -62,10 +62,8 @@ int id_blockchain_ec_set_public_key(ID_BLOCKCHAIN_EC_KEY *eckey,
 	return EC_KEY_set_public_key(eckey, pub);
 }
 
-ID_BLOCKCHAIN_ECDSA_SIG* id_blockchain_ecdsa256_do_sign
-												 (const unsigned char *msg, 
-												  size_t len,
-                          ID_BLOCKCHAIN_EC_KEY *eckey)
+ID_BLOCKCHAIN_ECDSA_SIG* id_blockchain_ecdsa256_do_sign(const unsigned char *msg,
+                                                        ID_BLOCKCHAIN_EC_KEY *eckey)
 {
 	unsigned char digest[SHA256_DIGEST_LENGTH]; 
 	id_blockchain_sha256(msg, len, digest);
@@ -93,9 +91,10 @@ void id_blockchain_ecdsa_sig_free(ID_BLOCKCHAIN_ECDSA_SIG *sig)
 	ECDSA_SIG_free(sig);
 }
 
-int id_blockchain_ecdsa256_do_verify(const unsigned char *msg, size_t len,
-                    								 const ID_BLOCKCHAIN_ECDSA_SIG *sig, 
-                    								 ID_BLOCKCHAIN_EC_KEY* eckey)
+int id_blockchain_ecdsa256_do_verify(const unsigned char *msg,
+				     size_t len,
+				     const ID_BLOCKCHAIN_ECDSA_SIG *sig,
+				     ID_BLOCKCHAIN_EC_KEY* eckey)
 {
 	unsigned char digest[SHA256_DIGEST_LENGTH]; 
 	id_blockchain_sha256(msg, len, digest);

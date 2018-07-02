@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>ID-Blockchain_crypto: /export/home/barbierm01/Documents/Travail/dev/id-blockchain_crypto/inc/id_blockchain_signature.h File Reference</title>
+<title>ID-Blockchain_crypto: /home/morgan/Documents/Travail/dev/id-blockchain/kevin/id-blockchain_crypto/inc/id_blockchain_signature.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
    <div id="projectname">ID-Blockchain_crypto
    &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">Mini crypto library for the ID-Blockchain project</div>
+   <div id="projectbrief">Mini crypto library for the project ID-BLockchain. It is based on OpenSSL library</div>
   </td>
  </tr>
  </tbody>
@@ -62,7 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -101,6 +101,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;openssl/evp.h&gt;</code><br />
 <code>#include &lt;openssl/sha.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="id__blockchain__hashing_8h_source.html">id_blockchain_hashing.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for id_blockchain_signature.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="id__blockchain__signature_8h__incl.png" border="0" usemap="#_2home_2morgan_2Documents_2Travail_2dev_2id-blockchain_2kevin_2id-blockchain__crypto_2inc_2id__blockchain__signature_8h" alt=""/></div>
+<map name="_2home_2morgan_2Documents_2Travail_2dev_2id-blockchain_2kevin_2id-blockchain__crypto_2inc_2id__blockchain__signature_8h" id="_2home_2morgan_2Documents_2Travail_2dev_2id-blockchain_2kevin_2id-blockchain__crypto_2inc_2id__blockchain__signature_8h">
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="id__blockchain__signature_8h__dep__incl.png" border="0" usemap="#_2home_2morgan_2Documents_2Travail_2dev_2id-blockchain_2kevin_2id-blockchain__crypto_2inc_2id__blockchain__signature_8hdep" alt=""/></div>
+<map name="_2home_2morgan_2Documents_2Travail_2dev_2id-blockchain_2kevin_2id-blockchain__crypto_2inc_2id__blockchain__signature_8hdep" id="_2home_2morgan_2Documents_2Travail_2dev_2id-blockchain_2kevin_2id-blockchain__crypto_2inc_2id__blockchain__signature_8hdep">
+</map>
+</div>
 </div>
 <p><a href="id__blockchain__signature_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -126,24 +140,24 @@ Functions</h2></td></tr>
 <tr class="memitem:ab29b83e32e720ee4d217991ee5498198"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="id__blockchain__signature_8h.html#ab29b83e32e720ee4d217991ee5498198">id_blockchain_eckey_free</a> (<a class="el" href="id__blockchain__signature_8h.html#a39a806e6e334f31ef707a4e304ebcff3">ID_BLOCKCHAIN_EC_KEY</a> *eckey)</td></tr>
 <tr class="memdesc:ab29b83e32e720ee4d217991ee5498198"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the memory for the couple of key.  <a href="#ab29b83e32e720ee4d217991ee5498198">More...</a><br /></td></tr>
 <tr class="separator:ab29b83e32e720ee4d217991ee5498198"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20d0ef176aa71df27af9755a17ef9d73"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a20d0ef176aa71df27af9755a17ef9d73"></a>
-const <a class="el" href="id__blockchain__signature_8h.html#aca599a6e1170e339fa7fac43c7e2d4e7">ID_BLOCKCHAIN_BIGNUM</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>id_blockchain_ec_get_private_key</b> (const <a class="el" href="id__blockchain__signature_8h.html#a39a806e6e334f31ef707a4e304ebcff3">ID_BLOCKCHAIN_EC_KEY</a> *eckey)</td></tr>
-<tr class="separator:a20d0ef176aa71df27af9755a17ef9d73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a135a1c6a2b1ab5d75b8c209ea2f538c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a135a1c6a2b1ab5d75b8c209ea2f538c0"></a>
-const <a class="el" href="id__blockchain__signature_8h.html#adf1d73c2aa462db68884ff1ffa532316">ID_BLOCKCHAIN_EC_POINT</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>id_blockchain_ec_get_public_key</b> (const <a class="el" href="id__blockchain__signature_8h.html#a39a806e6e334f31ef707a4e304ebcff3">ID_BLOCKCHAIN_EC_KEY</a> *eckey)</td></tr>
-<tr class="separator:a135a1c6a2b1ab5d75b8c209ea2f538c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1be86ca86a18970372d398202d73261"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="id__blockchain__signature_8h.html#aca599a6e1170e339fa7fac43c7e2d4e7">ID_BLOCKCHAIN_BIGNUM</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="id__blockchain__signature_8h.html#af1be86ca86a18970372d398202d73261">id_blockchain_ec_get_private_key</a> (const <a class="el" href="id__blockchain__signature_8h.html#a39a806e6e334f31ef707a4e304ebcff3">ID_BLOCKCHAIN_EC_KEY</a> *eckey)</td></tr>
+<tr class="memdesc:af1be86ca86a18970372d398202d73261"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the private key from the couple of keys.  <a href="#af1be86ca86a18970372d398202d73261">More...</a><br /></td></tr>
+<tr class="separator:af1be86ca86a18970372d398202d73261"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5aa6818b2025c60209b1aaed0dae2f62"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="id__blockchain__signature_8h.html#adf1d73c2aa462db68884ff1ffa532316">ID_BLOCKCHAIN_EC_POINT</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="id__blockchain__signature_8h.html#a5aa6818b2025c60209b1aaed0dae2f62">id_blockchain_ec_get_public_key</a> (const <a class="el" href="id__blockchain__signature_8h.html#a39a806e6e334f31ef707a4e304ebcff3">ID_BLOCKCHAIN_EC_KEY</a> *eckey)</td></tr>
+<tr class="memdesc:a5aa6818b2025c60209b1aaed0dae2f62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the public key from the couple of keys.  <a href="#a5aa6818b2025c60209b1aaed0dae2f62">More...</a><br /></td></tr>
+<tr class="separator:a5aa6818b2025c60209b1aaed0dae2f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab26d5a66fac6a93e1c0b1c1a2a720118"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="id__blockchain__signature_8h.html#ab26d5a66fac6a93e1c0b1c1a2a720118">id_blockchain_ec_set_private_key</a> (<a class="el" href="id__blockchain__signature_8h.html#a39a806e6e334f31ef707a4e304ebcff3">ID_BLOCKCHAIN_EC_KEY</a> *eckey, const <a class="el" href="id__blockchain__signature_8h.html#aca599a6e1170e339fa7fac43c7e2d4e7">ID_BLOCKCHAIN_BIGNUM</a> *prv)</td></tr>
 <tr class="memdesc:ab26d5a66fac6a93e1c0b1c1a2a720118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setting up the private key into the couple of keys.  <a href="#ab26d5a66fac6a93e1c0b1c1a2a720118">More...</a><br /></td></tr>
 <tr class="separator:ab26d5a66fac6a93e1c0b1c1a2a720118"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff804d3a5161134834c7309264eb1573"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="id__blockchain__signature_8h.html#aff804d3a5161134834c7309264eb1573">id_blockchain_ec_set_public_key</a> (<a class="el" href="id__blockchain__signature_8h.html#a39a806e6e334f31ef707a4e304ebcff3">ID_BLOCKCHAIN_EC_KEY</a> *eckey, const <a class="el" href="id__blockchain__signature_8h.html#adf1d73c2aa462db68884ff1ffa532316">ID_BLOCKCHAIN_EC_POINT</a> *pub)</td></tr>
 <tr class="memdesc:aff804d3a5161134834c7309264eb1573"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setting up the public key into the couple of keys.  <a href="#aff804d3a5161134834c7309264eb1573">More...</a><br /></td></tr>
 <tr class="separator:aff804d3a5161134834c7309264eb1573"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb529766d9ae7c663b8373b78b62a615"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb529766d9ae7c663b8373b78b62a615"></a>
-<a class="el" href="id__blockchain__signature_8h.html#a2d48b95f181e6a73ebab194fe084dcdb">ID_BLOCKCHAIN_ECDSA_SIG</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>id_blockchain_ecdsa256_do_sign</b> (const unsigned char *msg, size_t len, <a class="el" href="id__blockchain__signature_8h.html#a39a806e6e334f31ef707a4e304ebcff3">ID_BLOCKCHAIN_EC_KEY</a> *eckey)</td></tr>
-<tr class="separator:acb529766d9ae7c663b8373b78b62a615"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbd544f5d3e580f64cb62a4ffadf2747"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adbd544f5d3e580f64cb62a4ffadf2747"></a>
-<a class="el" href="id__blockchain__signature_8h.html#a2d48b95f181e6a73ebab194fe084dcdb">ID_BLOCKCHAIN_ECDSA_SIG</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>id_blockchain_ecdsa521_do_sign</b> (const unsigned char *msg, size_t len, <a class="el" href="id__blockchain__signature_8h.html#a39a806e6e334f31ef707a4e304ebcff3">ID_BLOCKCHAIN_EC_KEY</a> *eckey)</td></tr>
-<tr class="separator:adbd544f5d3e580f64cb62a4ffadf2747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9b961f9d0817ff55590b8597bd57a79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="id__blockchain__signature_8h.html#a2d48b95f181e6a73ebab194fe084dcdb">ID_BLOCKCHAIN_ECDSA_SIG</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="id__blockchain__signature_8h.html#ab9b961f9d0817ff55590b8597bd57a79">id_blockchain_ecdsa256_do_sign</a> (const unsigned char *msg, size_t len, <a class="el" href="id__blockchain__signature_8h.html#a39a806e6e334f31ef707a4e304ebcff3">ID_BLOCKCHAIN_EC_KEY</a> *eckey)</td></tr>
+<tr class="memdesc:ab9b961f9d0817ff55590b8597bd57a79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the ECDSA signature for a 128 bits of security level.  <a href="#ab9b961f9d0817ff55590b8597bd57a79">More...</a><br /></td></tr>
+<tr class="separator:ab9b961f9d0817ff55590b8597bd57a79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e9cce711fdd73d6b3c7796e85c6bdb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="id__blockchain__signature_8h.html#a2d48b95f181e6a73ebab194fe084dcdb">ID_BLOCKCHAIN_ECDSA_SIG</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="id__blockchain__signature_8h.html#a9e9cce711fdd73d6b3c7796e85c6bdb5">id_blockchain_ecdsa521_do_sign</a> (const unsigned char *msg, size_t len, <a class="el" href="id__blockchain__signature_8h.html#a39a806e6e334f31ef707a4e304ebcff3">ID_BLOCKCHAIN_EC_KEY</a> *eckey)</td></tr>
+<tr class="memdesc:a9e9cce711fdd73d6b3c7796e85c6bdb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the ECDSA signature for a 256 bits of security level.  <a href="#a9e9cce711fdd73d6b3c7796e85c6bdb5">More...</a><br /></td></tr>
+<tr class="separator:a9e9cce711fdd73d6b3c7796e85c6bdb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43a8a4025d269acade90aca97fff987d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="id__blockchain__signature_8h.html#a43a8a4025d269acade90aca97fff987d">id_blockchain_ecdsa256_do_verify</a> (const unsigned char *msg, size_t len, const <a class="el" href="id__blockchain__signature_8h.html#a2d48b95f181e6a73ebab194fe084dcdb">ID_BLOCKCHAIN_ECDSA_SIG</a> *sig, <a class="el" href="id__blockchain__signature_8h.html#a39a806e6e334f31ef707a4e304ebcff3">ID_BLOCKCHAIN_EC_KEY</a> *eckey)</td></tr>
 <tr class="memdesc:a43a8a4025d269acade90aca97fff987d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verify if a 128 bits security level signature is valid.  <a href="#a43a8a4025d269acade90aca97fff987d">More...</a><br /></td></tr>
 <tr class="separator:a43a8a4025d269acade90aca97fff987d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -223,6 +237,60 @@ const <a class="el" href="id__blockchain__signature_8h.html#adf1d73c2aa462db6888
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="af1be86ca86a18970372d398202d73261"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="id__blockchain__signature_8h.html#aca599a6e1170e339fa7fac43c7e2d4e7">ID_BLOCKCHAIN_BIGNUM</a> * id_blockchain_ec_get_private_key </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="id__blockchain__signature_8h.html#a39a806e6e334f31ef707a4e304ebcff3">ID_BLOCKCHAIN_EC_KEY</a> *&#160;</td>
+          <td class="paramname"><em>eckey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the private key from the couple of keys. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">private</td><td>key </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">couple</td><td>of keys </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="id__blockchain__signature_8c_source.html#l00042">42</a> of file <a class="el" href="id__blockchain__signature_8c_source.html">id_blockchain_signature.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5aa6818b2025c60209b1aaed0dae2f62"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="id__blockchain__signature_8h.html#adf1d73c2aa462db68884ff1ffa532316">ID_BLOCKCHAIN_EC_POINT</a> * id_blockchain_ec_get_public_key </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="id__blockchain__signature_8h.html#a39a806e6e334f31ef707a4e304ebcff3">ID_BLOCKCHAIN_EC_KEY</a> *&#160;</td>
+          <td class="paramname"><em>eckey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the public key from the couple of keys. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">public</td><td>key </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">couple</td><td>of keys </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="id__blockchain__signature_8c_source.html#l00048">48</a> of file <a class="el" href="id__blockchain__signature_8c_source.html">id_blockchain_signature.c</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ab26d5a66fac6a93e1c0b1c1a2a720118"></a>
 <div class="memitem">
 <div class="memproto">
@@ -299,6 +367,49 @@ const <a class="el" href="id__blockchain__signature_8h.html#adf1d73c2aa462db6888
 
 </div>
 </div>
+<a class="anchor" id="ab9b961f9d0817ff55590b8597bd57a79"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="id__blockchain__signature_8h.html#a2d48b95f181e6a73ebab194fe084dcdb">ID_BLOCKCHAIN_ECDSA_SIG</a> * id_blockchain_ecdsa256_do_sign </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="id__blockchain__signature_8h.html#a39a806e6e334f31ef707a4e304ebcff3">ID_BLOCKCHAIN_EC_KEY</a> *&#160;</td>
+          <td class="paramname"><em>eckey</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compute the ECDSA signature for a 128 bits of security level. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">signature</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">msg</td><td>the message to sign </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>lenght of the message msg </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">eckey</td><td>couple of keys containing an initialized private one </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a43a8a4025d269acade90aca97fff987d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -347,7 +458,7 @@ const <a class="el" href="id__blockchain__signature_8h.html#adf1d73c2aa462db6888
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="id__blockchain__signature_8c_source.html#l00096">96</a> of file <a class="el" href="id__blockchain__signature_8c_source.html">id_blockchain_signature.c</a>.</p>
+<p>Definition at line <a class="el" href="id__blockchain__signature_8c_source.html#l00094">94</a> of file <a class="el" href="id__blockchain__signature_8c_source.html">id_blockchain_signature.c</a>.</p>
 
 </div>
 </div>
@@ -374,6 +485,51 @@ const <a class="el" href="id__blockchain__signature_8h.html#adf1d73c2aa462db6888
 </dl>
 
 <p>Definition at line <a class="el" href="id__blockchain__signature_8c_source.html#l00004">4</a> of file <a class="el" href="id__blockchain__signature_8c_source.html">id_blockchain_signature.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9e9cce711fdd73d6b3c7796e85c6bdb5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="id__blockchain__signature_8h.html#a2d48b95f181e6a73ebab194fe084dcdb">ID_BLOCKCHAIN_ECDSA_SIG</a> * id_blockchain_ecdsa521_do_sign </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="id__blockchain__signature_8h.html#a39a806e6e334f31ef707a4e304ebcff3">ID_BLOCKCHAIN_EC_KEY</a> *&#160;</td>
+          <td class="paramname"><em>eckey</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compute the ECDSA signature for a 256 bits of security level. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">signature</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">msg</td><td>the message to sign </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>lenght of the message msg </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">eckey</td><td>couple of keys containing an initialized private one </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="id__blockchain__signature_8c_source.html#l00077">77</a> of file <a class="el" href="id__blockchain__signature_8c_source.html">id_blockchain_signature.c</a>.</p>
 
 </div>
 </div>
@@ -425,7 +581,7 @@ const <a class="el" href="id__blockchain__signature_8h.html#adf1d73c2aa462db6888
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="id__blockchain__signature_8c_source.html#l00106">106</a> of file <a class="el" href="id__blockchain__signature_8c_source.html">id_blockchain_signature.c</a>.</p>
+<p>Definition at line <a class="el" href="id__blockchain__signature_8c_source.html#l00105">105</a> of file <a class="el" href="id__blockchain__signature_8c_source.html">id_blockchain_signature.c</a>.</p>
 
 </div>
 </div>
@@ -477,7 +633,7 @@ const <a class="el" href="id__blockchain__signature_8h.html#adf1d73c2aa462db6888
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="id__blockchain__signature_8c_source.html#l00091">91</a> of file <a class="el" href="id__blockchain__signature_8c_source.html">id_blockchain_signature.c</a>.</p>
+<p>Definition at line <a class="el" href="id__blockchain__signature_8c_source.html#l00089">89</a> of file <a class="el" href="id__blockchain__signature_8c_source.html">id_blockchain_signature.c</a>.</p>
 
 </div>
 </div>
