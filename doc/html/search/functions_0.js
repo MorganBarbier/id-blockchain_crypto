@@ -4,7 +4,7 @@ var searchData=
   ['id_5fblockchain_5fec_5fget_5fpublic_5fkey',['id_blockchain_ec_get_public_key',['../id__blockchain__signature_8h.html#a5aa6818b2025c60209b1aaed0dae2f62',1,'id_blockchain_signature.c']]],
   ['id_5fblockchain_5fec_5fset_5fprivate_5fkey',['id_blockchain_ec_set_private_key',['../id__blockchain__signature_8h.html#ab26d5a66fac6a93e1c0b1c1a2a720118',1,'id_blockchain_signature.c']]],
   ['id_5fblockchain_5fec_5fset_5fpublic_5fkey',['id_blockchain_ec_set_public_key',['../id__blockchain__signature_8h.html#aff804d3a5161134834c7309264eb1573',1,'id_blockchain_signature.c']]],
-  ['id_5fblockchain_5fecdsa256_5fdo_5fsign',['id_blockchain_ecdsa256_do_sign',['../id__blockchain__signature_8h.html#ab9b961f9d0817ff55590b8597bd57a79',1,'id_blockchain_signature.h']]],
+  ['id_5fblockchain_5fecdsa256_5fdo_5fsign',['id_blockchain_ecdsa256_do_sign',['../id__blockchain__signature_8h.html#ab9b961f9d0817ff55590b8597bd57a79',1,'id_blockchain_signature.c']]],
   ['id_5fblockchain_5fecdsa256_5fdo_5fverify',['id_blockchain_ecdsa256_do_verify',['../id__blockchain__signature_8h.html#a43a8a4025d269acade90aca97fff987d',1,'id_blockchain_signature.c']]],
   ['id_5fblockchain_5fecdsa256_5fkeygen',['id_blockchain_ecdsa256_keygen',['../id__blockchain__signature_8h.html#ac3b40375412f253780a84a96227fd7a7',1,'id_blockchain_signature.c']]],
   ['id_5fblockchain_5fecdsa521_5fdo_5fsign',['id_blockchain_ecdsa521_do_sign',['../id__blockchain__signature_8h.html#a9e9cce711fdd73d6b3c7796e85c6bdb5',1,'id_blockchain_signature.c']]],
